@@ -1,0 +1,19 @@
+type: ACTION
+language: PYTHON_3
+name: Synchronize CC Templates and Action Bundles
+description: Exports the CC Templates and Action Bundles from the local CVP cluster and imports them to the remote CVP cluster
+file: script.py
+static-params: []
+dynamic-params:
+  - name: dstUser
+    description: The username of the remote CVP Server
+    required: true
+    hidden: false
+  - name: dstPassword
+    description: The password of the remote CVP Server
+    required: true
+    hidden: true
+  - name: dst
+    description: The IP:Port of the remote CVP Server
+    required: true
+    hidden: false
